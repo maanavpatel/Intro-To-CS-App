@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212325"
+    android:foregroundTint="#9FA2A4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/invitationsGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1565C0"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/invitationsList"
+                android:text="Invitations"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/invitationsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ongoingGamesGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1E88E5"
+            android:foregroundTint="#00D51B1B"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ongoing Games"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false" />
+
+            <LinearLayout
+                android:id="@+id/ongoingGamesList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/createGame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E64A19"
+            android:text="Create Game"
+            android:textColor="#FFFFFF"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</ScrollView>
